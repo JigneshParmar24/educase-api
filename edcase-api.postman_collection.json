@@ -1,0 +1,126 @@
+{
+  "info": {
+    "_postman_id": "099012c9-a5bb-4ed1-9765-897cde9d9d37",
+    "name": "edcase-api",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "51225094",
+    "_collection_link": "https://go.postman.co/collection/51225094-099012c9-a5bb-4ed1-9765-897cde9d9d37?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "list-school",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://educase-api-production.up.railway.app/api/v1/school/list?latitude=10.0760&longitude=17.8777",
+          "protocol": "https",
+          "host": [
+            "educase-api-production",
+            "up",
+            "railway",
+            "app"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "school",
+            "list"
+          ],
+          "query": [
+            {
+              "key": "latitude",
+              "value": "10.0760"
+            },
+            {
+              "key": "longitude",
+              "value": "17.8777"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "add-school",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTc2OTcwNDM3OCwiZXhwIjoxNzY5NzA1Mjc4fQ.KLfPeZDmY-9z5KzZ7aZHcxatAl8cmL5ezxFAh9nUjhA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"C J High School\",\r\n    \"address\": \"Tardeo, Mumbai\",\r\n    \"latitude\": 18.9322,\r\n    \"longitude\": 72.8353\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://educase-api-production.up.railway.app/api/v1/school/add",
+          "protocol": "https",
+          "host": [
+            "educase-api-production",
+            "up",
+            "railway",
+            "app"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "school",
+            "add"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "test",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTc2OTcwNDM3OCwiZXhwIjoxNzY5NzA1Mjc4fQ.KLfPeZDmY-9z5KzZ7aZHcxatAl8cmL5ezxFAh9nUjhA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "https://educase-api-production.up.railway.app/",
+          "protocol": "https",
+          "host": [
+            "educase-api-production",
+            "up",
+            "railway",
+            "app"
+          ],
+          "path": [
+            ""
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
